@@ -21,7 +21,7 @@ function Dialog({Title,
   
     return (
        <>
-          <Modal show={mostrar} onHide={aoFechar}>
+          <Modal show={mostrar} onHide={aoFechar} centered>
 
             <Modal.Header closeButton>
               <Modal.Title>{Title ? Title : "Texto Padrão"}</Modal.Title>
@@ -30,7 +30,6 @@ function Dialog({Title,
               <Modal.Body>{mensagem}  </Modal.Body>
               <Modal.Footer>
                 <Button variant='secondary' onClick={aoFechar}>{TextoCancelar}
-                  Fechar
                 </Button>
                 <Button variant='primary' onClick={aoConfirmar}>{textoConfirmar}
                 </Button>

@@ -1,6 +1,8 @@
 import './ListaProdutos.css';
 import img from '../../assets/img/produtos/le_grand_chocolat.png'
 import { Link } from 'react-router-dom';
+import iconeUsuario from '../../assets/icones/user.svg'
+import iconeEstrela from '../../assets/icones/star.svg'
 
 function ListaProdutos() {
     return(
@@ -31,9 +33,9 @@ function ListaProdutos() {
         <p className="card_rodape">
           <data value={185.0}>R$ 185,00 / kg</data>
           <span className="card_av">
-            <img src="../icones/user.svg" alt="icone de usuarios" />
+            <img src={iconeUsuario} alt="icone de usuarios" />
             <data value={10}>10</data>
-            <img src="../icones/star.svg" alt="icone de estrela" />
+            <img src={iconeEstrela} alt="icone de estrela" />
             <data value="9.5">9,5</data>
           </span>
         </p>
